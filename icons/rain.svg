@@ -1,0 +1,24 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_3_70)">
+<circle cx="19" cy="39" r="19" fill="white"/>
+<circle cx="81" cy="39" r="19" fill="white"/>
+<ellipse cx="38.5" cy="18.5" rx="19.5" ry="18.5" fill="white"/>
+<ellipse cx="66.5" cy="22.5" rx="15.5" ry="14.5" fill="white"/>
+<rect x="21" y="20" width="61" height="38" fill="white"/>
+<path d="M21 64V76" stroke="white" stroke-width="4" stroke-linecap="round"/>
+<path d="M36 64V76" stroke="white" stroke-width="4" stroke-linecap="round"/>
+<path d="M66 64V76" stroke="white" stroke-width="4" stroke-linecap="round"/>
+<path d="M82 64V76" stroke="white" stroke-width="4" stroke-linecap="round"/>
+<path d="M51 64V76" stroke="white" stroke-width="4" stroke-linecap="round"/>
+<path d="M21 86V98" stroke="white" stroke-width="4" stroke-linecap="round"/>
+<path d="M36 86V98" stroke="white" stroke-width="4" stroke-linecap="round"/>
+<path d="M66 86V98" stroke="white" stroke-width="4" stroke-linecap="round"/>
+<path d="M82 86V98" stroke="white" stroke-width="4" stroke-linecap="round"/>
+<path d="M51 86V98" stroke="white" stroke-width="4" stroke-linecap="round"/>
+</g>
+<defs>
+<clipPath id="clip0_3_70">
+<rect width="100" height="100" fill="white"/>
+</clipPath>
+</defs>
+</svg>

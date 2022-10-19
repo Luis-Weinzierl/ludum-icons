@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="ludum-icons.css" />
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+
+            html {
+                background: #293241;
+                margin: 0;
+                color: white;
+                font-family: Fredoka, Nunito, Arial, Helvetica, sans-serif
+            }
+
+            ul {
+                list-style-type: none;
+                margin: 1rem;
+                padding: 0;
+                width: calc(100vw - 17rem);
+                height: calc(100vh - 2rem);
+                overflow-x: scroll;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 1rem;
+                flex-wrap: wrap;
+            }
+
+            li {
+                position: relative;
+                background: #3d5a80;
+                width: clamp(200px, 100%, 300px);
+                height: 240px;
+                border-radius: 1rem;
+                display: flex;
+                flex-direction: column;
+            }
+
+                li div {
+                    display: block;
+                    width: calc(100% - 10px);
+                    height: 190px;
+                    margin: 5px;
+                    color: white;
+                    border-radius: 11px;
+                    display: grid;
+                    place-items: center;
+                    font-size: var(--size);
+                }
+
+                li span {
+                    display: block;
+                    width: calc(100% - 10px);
+                    margin: 0px 5px 5px 5px;
+                    text-align: center;
+                    color: white;
+                    font-size: 1rem;
+                    line-height: 40px;
+                }
+
+            .sidebar {
+                position: absolute;
+                top: 30rem;
+                right: 0;
+                bottom: 0;
+                width: 14rem;
+                background: transparent;
+            }
+
+            hero {
+                display: block;
+                height: 30rem;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: white;
+            }
+
+            h1, h2 {
+                margin: 0;
+                font-weight: 600;
+            }
+
+            h1 {
+                font-size: clamp(2rem, 10vw, 10rem);
+            }
+
+            .slidecontainer {
+                width: 100%; /* Width of the outside container */
+            }
+
+            /* The slider itself */
+            .slider {
+                -webkit-appearance: none; /* Override default CSS styles */
+                appearance: none;
+                width: calc(100% - 2rem); /* Full-width */
+                height: 5px; /* Specified height */
+                background: #d3d3d3; /* Grey background */
+                outline: none; /* Remove outline */ /* Set transparency (for mouse-over effects on hover) */
+                margin: 1rem;
+                border-radius: 100px;
+            }
+
+                /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+                .slider::-webkit-slider-thumb {
+                    -webkit-appearance: none; /* Override default look */
+                    appearance: none;
+                    width: 15px; /* Set a specific slider handle width */
+                    height: 15px; /* Slider handle height */
+                    background: #06d6a0; /* Green background */
+                    cursor: pointer; /* Cursor on hover */
+                    border-radius: 50%;
+                    outline: none;
+                }
+
+                .slider::-moz-range-thumb {
+                    width: 15px; /* Set a specific slider handle width */
+                    height: 15px; /* Slider handle height */
+                    background: #06d6a0; /* Green background */
+                    cursor: pointer; /* Cursor on hover */
+                    border-radius: 50%;
+                    outline: none;
+                }
+
+            label {
+                display: block;
+                text-align: right;
+                color: white;
+                width: calc(100% - 2rem);
+                margin-inline: 1rem;
+            }
+
+            h2 {
+                display: block;
+            }
+
+            button {
+                display: inline-block;
+                height: 3rem;
+                min-width: 8rem;
+                background: #1e88e5;
+                color: white;
+                border-radius: .5rem;
+                border: none;
+                margin: .5rem;
+                cursor: pointer;
+                transition: background 300ms ease, transform 150ms ease;
+                font-size: 1rem;
+                font-family: Fredoka, Nunito, Arial, Helvetica, sans-serif;
+
+            }
+
+                button:hover {
+                    background-color: #1769b2;
+                }
+
+                button:active {
+                    transform: scale(0.9);
+                }
+        </style>
+    </head>
+
+    <body>
+        <hero>
+            <h1><i class="anchor"></i> Ludum Icons</h1>
+            <h2>Made with <i class="heart"></i> by BlackBird</h2>
+            <div>
+                <button>GitHub</button>
+                <button>Download all</button>
+            </div>
+        </hero>
+        <ul id="list">
+            <li><div><i class="alert-circle"></i></div><span>alert-circle</span></li><li><div><i class="alert-octagon"></i></div><span>alert-octagon</span></li><li><div><i class="alert-triangle"></i></div><span>alert-triangle</span></li><li><div><i class="align-block"></i></div><span>align-block</span></li><li><div><i class="align-center"></i></div><span>align-center</span></li><li><div><i class="align-left"></i></div><span>align-left</span></li><li><div><i class="align-right"></i></div><span>align-right</span></li><li><div><i class="anchor"></i></div><span>anchor</span></li><li><div><i class="arrow-down-left-curved"></i></div><span>arrow-down-left-curved</span></li><li><div><i class="arrow-down-left"></i></div><span>arrow-down-left</span></li><li><div><i class="arrow-down-right-curved"></i></div><span>arrow-down-right-curved</span></li><li><div><i class="arrow-down-right"></i></div><span>arrow-down-right</span></li><li><div><i class="arrow-down"></i></div><span>arrow-down</span></li><li><div><i class="arrow-left"></i></div><span>arrow-left</span></li><li><div><i class="arrow-right"></i></div><span>arrow-right</span></li><li><div><i class="arrow-top-left"></i></div><span>arrow-top-left</span></li><li><div><i class="arrow-top-right"></i></div><span>arrow-top-right</span></li><li><div><i class="arrow-up-left-curved"></i></div><span>arrow-up-left-curved</span></li><li><div><i class="arrow-up-right-curved"></i></div><span>arrow-up-right-curved</span></li><li><div><i class="arrow-up"></i></div><span>arrow-up</span></li><li><div><i class="battery-charging"></i></div><span>battery-charging</span></li><li><div><i class="battery"></i></div><span>battery</span></li><li><div><i class="bell-off"></i></div><span>bell-off</span></li><li><div><i class="bell"></i></div><span>bell</span></li><li><div><i class="bold"></i></div><span>bold</span></li><li><div><i class="bookmark"></i></div><span>bookmark</span></li><li><div><i class="camera-off"></i></div><span>camera-off</span></li><li><div><i class="camera"></i></div><span>camera</span></li><li><div><i class="chart-bars"></i></div><span>chart-bars</span></li><li><div><i class="chart-line"></i></div><span>chart-line</span></li><li><div><i class="checkmark"></i></div><span>checkmark</span></li><li><div><i class="chevron-down"></i></div><span>chevron-down</span></li><li><div><i class="chevron-left"></i></div><span>chevron-left</span></li><li><div><i class="chevron-right"></i></div><span>chevron-right</span></li><li><div><i class="chevron-up"></i></div><span>chevron-up</span></li><li><div><i class="circle"></i></div><span>circle</span></li><li><div><i class="cloud-lightning"></i></div><span>cloud-lightning</span></li><li><div><i class="cloud"></i></div><span>cloud</span></li><li><div><i class="clouds-sun"></i></div><span>clouds-sun</span></li><li><div><i class="cogwheel"></i></div><span>cogwheel</span></li><li><div><i class="command"></i></div><span>command</span></li><li><div><i class="cross"></i></div><span>cross</span></li><li><div><i class="database"></i></div><span>database</span></li><li><div><i class="divide"></i></div><span>divide</span></li><li><div><i class="download"></i></div><span>download</span></li><li><div><i class="file-add"></i></div><span>file-add</span></li><li><div><i class="file"></i></div><span>file</span></li><li><div><i class="folder-add"></i></div><span>folder-add</span></li><li><div><i class="folder"></i></div><span>folder</span></li><li><div><i class="globe-crossed"></i></div><span>globe-crossed</span></li><li><div><i class="globe"></i></div><span>globe</span></li><li><div><i class="heart"></i></div><span>heart</span></li><li><div><i class="home"></i></div><span>home</span></li><li><div><i class="italic"></i></div><span>italic</span></li><li><div><i class="key"></i></div><span>key</span></li><li><div><i class="letter"></i></div><span>letter</span></li><li><div><i class="lightning"></i></div><span>lightning</span></li><li><div><i class="link"></i></div><span>link</span></li><li><div><i class="lock-open"></i></div><span>lock-open</span></li><li><div><i class="lock"></i></div><span>lock</span></li><li><div><i class="log-in"></i></div><span>log-in</span></li><li><div><i class="log-out"></i></div><span>log-out</span></li><li><div><i class="magnifying-glass"></i></div><span>magnifying-glass</span></li><li><div><i class="man"></i></div><span>man</span></li><li><div><i class="microphone-off"></i></div><span>microphone-off</span></li><li><div><i class="microphone"></i></div><span>microphone</span></li><li><div><i class="minus"></i></div><span>minus</span></li><li><div><i class="play"></i></div><span>play</span></li><li><div><i class="plus"></i></div><span>plus</span></li><li><div><i class="pulse"></i></div><span>pulse</span></li><li><div><i class="rain"></i></div><span>rain</span></li><li><div><i class="rewind"></i></div><span>rewind</span></li><li><div><i class="screen"></i></div><span>screen</span></li><li><div><i class="server"></i></div><span>server</span></li><li><div><i class="skip"></i></div><span>skip</span></li><li><div><i class="speech-bubble"></i></div><span>speech-bubble</span></li><li><div><i class="square"></i></div><span>square</span></li><li><div><i class="sun"></i></div><span>sun</span></li><li><div><i class="target"></i></div><span>target</span></li><li><div><i class="thunderstorm"></i></div><span>thunderstorm</span></li><li><div><i class="trash"></i></div><span>trash</span></li><li><div><i class="triangle"></i></div><span>triangle</span></li><li><div><i class="type"></i></div><span>type</span></li><li><div><i class="underline"></i></div><span>underline</span></li><li><div><i class="user"></i></div><span>user</span></li><li><div><i class="wheelchair-man"></i></div><span>wheelchair-man</span></li><li><div><i class="windows"></i></div><span>windows</span></li><li><div><i class="woman"></i></div><span>woman</span></li>
+        </ul>
+        <div class="sidebar">
+            <h2>Size</h2>
+            <div class="slidecontainer">
+                <input type="range" min="1" max="40" value="20" class="slider" id="sizeRange">
+            </div>
+            <label id="listLabel" for="sizeRange">5rem</label>
+        </div>
+        <script>
+            const sizeSlider = document.querySelector("#sizeRange");
+            const list = document.querySelector("#list");
+            const listLabel = document.querySelector("#listLabel");
+
+            list.setAttribute("style", `--size: ${sizeSlider.value * .25}rem;`);
+            listLabel.innerText = `${sizeSlider.value * .25}rem (${sizeSlider.value * .25 * 16}px)`
+
+            sizeSlider.onchange = () => {
+                list.setAttribute("style", `--size: ${sizeSlider.value * .25}rem;`);
+                listLabel.innerText = `${sizeSlider.value * .25}rem (${sizeSlider.value * .25 * 16}px)`
+            };
+
+            function downloadURI(uri) {
+                var link = document.createElement("a");
+                // If you don't know the name or want to use
+                // the webserver default set name = ''
+                link.download = '';
+                link.href = uri;
+                document.body.appendChild(link);
+                link.click();
+            }
+
+            document.querySelectorAll("li").forEach(el => {
+                el.onclick = () => {
+                    downloadURI(`./icons/${el.querySelector("i").getAttribute("class")}.svg`);
+                }
+            });
+        </script>
+    </body>
+</html>

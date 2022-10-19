@@ -1,0 +1,25 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_3_90)">
+<ellipse cx="21" cy="36.5" rx="18" ry="17.5" fill="white"/>
+<ellipse cx="78" cy="36.5" rx="18" ry="17.5" fill="white"/>
+<ellipse cx="38.5" cy="17.5" rx="18.5" ry="17.5" fill="white"/>
+<ellipse cx="64.5" cy="21.5" rx="14.5" ry="13.5" fill="white"/>
+<rect x="22" y="19" width="57" height="35" fill="white"/>
+<path d="M50.5157 76.9075C50.5635 76.3933 50.995 76 51.5114 76H59.4332C60.164 76 60.6479 76.7583 60.3402 77.4211L50.438 98.7489C49.9652 99.7673 48.4315 99.3533 48.5353 98.2353L50.5157 76.9075Z" fill="white"/>
+<path d="M49.4843 82.0925C49.4365 82.6067 49.005 83 48.4886 83H40.5668C39.836 83 39.3521 82.2417 39.6598 81.5789L49.562 60.2511C50.0348 59.2327 51.5685 59.6467 51.4647 60.7647L49.4843 82.0925Z" fill="white"/>
+<path d="M50 83H49L50 76H51L50 83Z" fill="white"/>
+<path d="M17 64V75" stroke="white" stroke-width="4" stroke-linecap="round"/>
+<path d="M30 64V75" stroke="white" stroke-width="4" stroke-linecap="round"/>
+<path d="M70 64V75" stroke="white" stroke-width="4" stroke-linecap="round"/>
+<path d="M84 64V75" stroke="white" stroke-width="4" stroke-linecap="round"/>
+<path d="M17 84V96" stroke="white" stroke-width="4" stroke-linecap="round"/>
+<path d="M30 84V96" stroke="white" stroke-width="4" stroke-linecap="round"/>
+<path d="M70 84V96" stroke="white" stroke-width="4" stroke-linecap="round"/>
+<path d="M84 84V96" stroke="white" stroke-width="4" stroke-linecap="round"/>
+</g>
+<defs>
+<clipPath id="clip0_3_90">
+<rect width="100" height="100" fill="white"/>
+</clipPath>
+</defs>
+</svg>
