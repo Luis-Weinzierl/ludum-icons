@@ -33,6 +33,7 @@
                 border-radius: 1rem;
                 display: flex;
                 flex-direction: column;
+                cursor: pointer;
             }
 
                 li div {
@@ -166,8 +167,8 @@
             <h1><i class="anchor"></i> Ludum Icons</h1>
             <h2>Made with <i class="heart"></i> by BlackBird</h2>
             <div>
-                <button>GitHub</button>
-                <button>Download all</button>
+                <button onclick="window.location.href = 'https://github.com/BlackBirdTV/ludum-icons'">GitHub</button>
+                <button onclick="downloadURI('https://raw.githubusercontent.com/BlackBirdTV/ludum-icons/main/ludum-icons.css')">Download all</button>
             </div>
         </hero>
         <ul id="list">
@@ -201,6 +202,7 @@
                 link.href = uri;
                 document.body.appendChild(link);
                 link.click();
+                link.remove();
             }
 
             document.querySelectorAll("li").forEach(el => {
